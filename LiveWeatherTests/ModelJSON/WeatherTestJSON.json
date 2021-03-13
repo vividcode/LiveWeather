@@ -1,0 +1,17 @@
+{
+    "id": 222222,
+    "weather_state_name": "Light Rain",
+    "weather_state_abbr": "lr",
+    "wind_direction_compass": "WSW",
+    "created": "2020-11-02T15:20:02.869207Z",
+    "applicable_date": "2020-11-02",
+    "min_temp": 9.52,
+    "max_temp": 17.5,
+    "the_temp": 45.385000000000002,
+    "wind_speed": 14.794400634536968,
+    "wind_direction": 244.1784961477768,
+    "air_pressure": 1006.0,
+    "humidity": 64,
+    "visibility": 11.19679819852064,
+    "predictability": 75
+}

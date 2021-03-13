@@ -1,0 +1,57 @@
+[
+    {
+        "title": "London",
+        "location_type": "City",
+        "woeid": 44418
+    },
+    {
+        "title": "Helsinki",
+        "location_type": "City",
+        "woeid": 565346
+    },
+    {
+        "title": "Oslo",
+        "location_type": "City",
+        "woeid": 862592
+    },
+    {
+        "title": "Mumbai",
+        "location_type": "City",
+        "woeid": 12586539
+    },
+    {
+        "title": "New York",
+        "location_type": "City",
+        "woeid": 2459115
+    },
+    {
+        "title": "Moscow",
+        "location_type": "City",
+        "woeid": 2122265
+    },
+    {
+        "title": "Stockholm",
+        "location_type": "City",
+        "woeid": 906057
+    },
+    {
+        "title": "Tokyo",
+        "location_type": "City",
+        "woeid": 1118370
+    },
+    {
+        "title": "Lima",
+        "location_type": "City",
+        "woeid": 418440
+    },
+    {
+        "title": "Lima",
+        "location_type": "City",
+        "woeid": 418440
+    },
+    {
+        "title": "Honolulu",
+        "location_type": "City",
+        "woeid": 2423945
+    }
+]

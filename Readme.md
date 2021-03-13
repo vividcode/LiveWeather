@@ -92,10 +92,6 @@ They use `DummyNetworkService` to mock network api data.
 
 # Limitations/Caveats:
 
-- No UI tests are considered within the scope. They can be easily implemented using [XCUIApplication()](https://developer.apple.com/documentation/xctest/xcuiapplication) API.
-
-- Due to **SnapKit** dependency, minimum deployment target is iOS 13+. Previous version support produces unexpected auto-layout errors.
-
 - Debug version updates weather every 10 seconds, just to minimize wait. Prod version uses 1 minute.
   This, and many more configurations, can be configured using [Constants.swift](https://github.com/vividcode/LiveWeather/blob/main/LiveWeather/Utilities/Constants.swift).
 

@@ -4,8 +4,7 @@
 
 It consists of single screen, showing preconfigured number of cities whose weather data is fetched from API.
 
-Locations are not just limited to London / Helsinki.
-They can be preconfigured from [Locations.json](https://github.com/vividcode/LiveWeather/blob/main/Locations.json).
+Locations can be preconfigured from [Locations.json](https://github.com/vividcode/LiveWeather/blob/main/Locations.json).
 
 For iPad, the app shows up to 8 locations. For iPhone, 4 locations are shown.
 
@@ -21,7 +20,9 @@ Weather API data is fetched every 1 minute (for Prod app) and 10 seconds (for De
 
 # App Architecture Overview:
 
-Core protocols that drive the app:
+<img src="Screenshots/Design.png" width="555" height="648">
+
+Core protocols (shown in yellow color above) that drive the app:
 
 ## Services
 
@@ -44,9 +45,9 @@ All 3 model structs (**Location**, **Weather** and **LocationWeather**) implemen
 
 Apart from these, every ViewModel has optional getters to access **NetworkService**, **FileService** and **DatabaseService** injected into it inside **services** array.
 
-In the current app, [LocationWeatherViewController.swift](https://github.com/vividcode/LiveWeather/blob/main/LiveWeather/ViewModel/LocationWeatherViewModel.swift) maintains a timer to regularly invoke network calls, fetch data, and update viewcontroller about data/error via callbacks.
+In the current app, `LocationWeatherViewModel.swift` maintains a timer to regularly invoke network calls, fetch data, and update viewcontroller about data/error via callbacks.
 
-The callbacks are just indications. They do not pass any data to viewcontrollers. This is to avoid copying of structs etc.. Viewcontroller has direct access to its own viewmodel data structures, and it uses them every time it receives callbacks.
+The callbacks are just indications. They do not pass any data to viewcontrollers. This is to avoid copying of structs. Viewcontroller has direct access to its own viewmodel data structures, and it uses them every time it receives callbacks.
 
 ## ViewModelOwner
 
